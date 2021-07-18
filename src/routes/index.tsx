@@ -1,4 +1,4 @@
-import Button from "../components/button";
+import Button from '../components/button';
 
 export function IndexRoute() {
   return (
@@ -6,5 +6,5 @@ export function IndexRoute() {
       <h1 className="font-normal text-5xl mb-10">Hello, World!</h1>
       <Button>Click me 🚀!</Button>
     </div>
-  )
+  );
 }

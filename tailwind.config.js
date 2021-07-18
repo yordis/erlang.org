@@ -1,8 +1,8 @@
 module.exports = {
   mode: 'jit',
-  darkMode: false, // or 'media' or 'class',
+  darkMode: 'class',
   purge: {
-    content: ['./src/**/*.{ts,tsx}']
+    content: ['./src/**/*.{ts,tsx}'],
   },
   plugins: [],
   theme: {},

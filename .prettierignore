@@ -1,0 +1,13 @@
+.yarnrc
+yarn.lock
+/coverage
+/dist
+.DS_Store
+LICENSE
+.editorconfig
+.gitignore
+*.cmd
+*.log
+.prettierignore
+.env*
+.npmrc

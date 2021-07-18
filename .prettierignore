@@ -11,3 +11,5 @@ LICENSE
 .prettierignore
 .env*
 .npmrc
+.next
+out

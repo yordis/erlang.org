@@ -1,0 +1,14 @@
+/*
+!public
+!src
+!package.json
+!.npmrc
+!tsconfig.json
+!yarn.lock
+!tailwind.config.js
+!next.config.js
+!next-env.d.ts
+!postcss.config.json
+!.eslintrc
+!sentry.client.config.js
+!sentry.server.config.js

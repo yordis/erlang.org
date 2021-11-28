@@ -2,6 +2,19 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 #__next {
-  display: contents;
+  @apply contents;
+}
+
+::selection {
+  @apply bg-purple-500;
+  @apply text-white;
 }

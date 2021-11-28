@@ -14,6 +14,7 @@ export function App(props: AppProps) {
     <React.Fragment>
       <Head>
         <title>Website</title>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <props.Component {...props.pageProps} />
     </React.Fragment>

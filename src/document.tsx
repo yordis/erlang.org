@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 export class WebsiteDocument extends Document {
   render() {
     return (
-      <Html lang="en" className="box-border antialiased">
+      <Html lang="en" className="box-border antialiased scroll-smooth">
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         </Head>

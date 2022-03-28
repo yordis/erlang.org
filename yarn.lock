@@ -212,10 +212,20 @@
   resolved "https://registry.yarnpkg.com/@straw-hat/prettier-config/-/prettier-config-2.0.2.tgz#0975ad64bbf846c70c7f58a004c3cbfec6de52bd"
   integrity sha512-4jgTrnSU+RKtaQytAQkWAj3X3P7K+bW1QD84gcAQ6o8XFTOEomTR1ZFXVEufBb0TDkXqJHslETn4iT/J5Rj5BA==
 
+"@straw-hat/tsconfig@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@straw-hat/tsconfig/-/tsconfig-4.0.1.tgz#ccbb8824355aa839ac3a7250f449db7105079711"
+  integrity sha512-0zwJ+Y3rTdiYWnwhV7VVUaOG5Ndp1Hc7uL8XqH+MmSzw1G6EUjNidyJUeMWiu0MIYi9PUXVvtJC5FQkG//ie7g==
+
 "@types/node@*":
   version "16.3.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.3.1.tgz#24691fa2b0c3ec8c0d34bfcfd495edac5593ebb4"
   integrity sha512-N87VuQi7HEeRJkhzovao/JviiqKjDKMVKxKMfUvSKw+MbkbW8R0nA3fi/MQhhlxV2fQ+2ReM+/Nt4efdrJx3zA==
+
+"@types/node@17.0.23":
+  version "17.0.23"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.23.tgz#3b41a6e643589ac6442bdbd7a4a3ded62f33f7da"
+  integrity sha512-UxDxWn7dl97rKVeVS61vErvw086aCYhDLyvRQZ5Rk65rZKepaFdm53GeqXaKBuOhED4e9uWq34IC3TdSdJJ2Gw==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"

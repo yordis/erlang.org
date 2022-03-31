@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 export class WebsiteDocument extends Document {
-  render() {
+  override render() {
     return (
       <Html lang="en" className="h-full box-border antialiased scroll-smooth">
         <Head>

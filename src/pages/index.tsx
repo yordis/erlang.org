@@ -1,1 +1,1 @@
-export { IndexRoute as default } from '@/routes/index';
+export { Index as default } from '@/routes/index';

@@ -8,12 +8,12 @@ export function Community() {
   return (
     <>
       <PageTitle title="Community" />
-      <Header/>
-      <div className="flex flex-col gap-20">
+      <Header />
+      <main className="flex flex-col gap-20">
         <Hero />
-        <CommunityLinks/>
-      </div>
-      <Footer />
+        <CommunityLinks />
+      </main>
+      <Footer className="mt-12 lg:mt-32" />
     </>
   );
 }

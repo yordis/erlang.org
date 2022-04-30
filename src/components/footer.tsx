@@ -3,6 +3,7 @@ import { ErlangOfficialLogo } from '@/components/erlang-official-logo';
 import { RouterLink } from '@/components/router-link';
 import { TwitterIcon } from '@/components/twitter-icon';
 import { GithubIcon } from '@/components/github-icon';
+import clsx from 'clsx';
 
 function MenuItem(props: PropsWithChildren<{ href: string }>) {
   return (
@@ -40,13 +41,13 @@ function SocialMediaLink(props: SocialMediaLinkProps) {
   );
 }
 
-export function Footer() {
+export function Footer(props: { className?: string }) {
   return (
-    <footer className="bg-gray-100" aria-labelledby="footer-heading">
+    <footer className={clsx(props.className, 'bg-gray-100')} aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-32 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-32 lg:px-8">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-12">
           <div className="flex flex-col gap-8">
             <ErlangOfficialLogo className="h-20 self-start" />

@@ -1,4 +1,4 @@
-import { InboxIcon, SparklesIcon } from '@heroicons/react/outline'
+import { InboxIcon, SparklesIcon } from '@heroicons/react/outline';
 
 export function Features() {
   return (
@@ -84,5 +84,5 @@ export function Features() {
         </div>
       </div>
     </div>
-  )
+  );
 }

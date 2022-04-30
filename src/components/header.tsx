@@ -4,18 +4,17 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { RouterLink } from '@/components/router-link';
 import { Fragment } from 'react';
 
-
 const navigation = [
   { name: 'Documentation', href: '/documentation' },
   { name: 'Community', href: '/community' },
   { name: 'Packages', href: '/packages' },
   { name: 'Blog', href: '/blog' },
-]
+];
 
 export function Header() {
   return (
     <div className="relative overflow-hidden">
-      <Popover as="header" className="relative">
+      <Popover as="header" className="fixed">
         <div className="bg-gray-900 pt-6">
           <nav
             className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
@@ -28,8 +27,7 @@ export function Header() {
                   <ErlangOfficialLogo className="h-8 w-auto sm:h-10" />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button
-                    className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
+                  <Popover.Button className="bg-gray-900 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     <MenuIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -37,8 +35,11 @@ export function Header() {
               </div>
               <div className="hidden space-x-8 md:flex md:ml-10">
                 {navigation.map((item) => (
-                  <RouterLink key={item.name} href={item.href}
-                              className="text-base font-medium text-white hover:text-gray-300">
+                  <RouterLink
+                    key={item.name}
+                    href={item.href}
+                    className="text-base font-medium text-white hover:text-gray-300"
+                  >
                     {item.name}
                   </RouterLink>
                 ))}
@@ -75,8 +76,7 @@ export function Header() {
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button
-                    className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600">
                     <span className="sr-only">Close menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -116,5 +116,5 @@ export function Header() {
         </Transition>
       </Popover>
     </div>
-  )
+  );
 }

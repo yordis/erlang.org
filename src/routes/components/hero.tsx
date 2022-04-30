@@ -3,7 +3,7 @@ import { Header } from '@/components/header';
 export function Hero() {
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         <div className="pt-10 bg-gray-900 sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
           <div className="mx-auto max-w-7xl lg:px-8">
@@ -59,5 +59,5 @@ export function Hero() {
         {/* More main page content here... */}
       </main>
     </>
-  )
+  );
 }

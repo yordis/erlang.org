@@ -64,5 +64,5 @@ export function Testimonial() {
         </div>
       </div>
     </section>
-  )
+  );
 }

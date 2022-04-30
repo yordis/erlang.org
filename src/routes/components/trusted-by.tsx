@@ -39,5 +39,5 @@ export function TrustedBy() {
         </div>
       </div>
     </div>
-  )
+  );
 }

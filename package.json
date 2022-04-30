@@ -5,6 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "format": "prettier --write '**/*'"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "12.1.5",
+    "@straw-hat/eslint-config-nextjs": "3.0.2",
     "@straw-hat/prettier-config": "2.0.3",
     "@straw-hat/tsconfig": "4.0.2",
     "@types/eslint": "8.4.1",
@@ -23,6 +25,7 @@
     "@types/react": "18.0.8",
     "autoprefixer": "10.4.5",
     "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5",
     "next-compose-plugins": "2.2.1",
     "postcss": "8.4.13",
     "postcss-import": "14.1.0",

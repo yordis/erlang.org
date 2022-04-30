@@ -49,6 +49,7 @@ const actions = [
   },
   {
     title: 'Slack',
+    description: 'Chat with other members of the community on Slack.',
     href: '/',
     icon: SlackIcon,
     iconForeground: 'text-indigo-700',

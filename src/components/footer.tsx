@@ -1,8 +1,8 @@
 import type { PropsWithChildren } from 'react';
 import { ErlangOfficialLogo } from '@/components/erlang-official-logo';
 import { RouterLink } from '@/components/router-link';
-import { TwitterIcon } from '@/components/twitter-icon';
-import { GithubIcon } from '@/components/github-icon';
+import { TwitterIcon } from '@/components/icons/twitter-icon';
+import { GitHubIcon } from '@/components/icons/git-hub-icon';
 import clsx from 'clsx';
 
 function MenuItem(props: PropsWithChildren<{ href: string }>) {
@@ -54,7 +54,7 @@ export function Footer(props: { className?: string }) {
             <p className="text-gray-500 text-base">Practical functional programming for a parallel world</p>
             <div className="flex gap-6">
               <SocialMediaLink name="Twitter" href="/" icon={TwitterIcon} />
-              <SocialMediaLink name="GitHub" href="/" icon={GithubIcon} />
+              <SocialMediaLink name="GitHub" href="/" icon={GitHubIcon} />
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">

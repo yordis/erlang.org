@@ -1,47 +1,56 @@
-import {
-  AcademicCapIcon,
-  BadgeCheckIcon,
-  CashIcon,
-  ClockIcon,
-  ReceiptRefundIcon,
-  UsersIcon,
-} from '@heroicons/react/outline';
 import clsx from 'clsx';
+import { TwitterIcon } from '@/components/icons/twitter-icon';
+import { GitHubIcon } from '@/components/icons/git-hub-icon';
+import { DiscordIcon } from '@/components/icons/discord-icon';
+import { StackOverflowIcon } from '@/components/icons/stack-overflow-icon';
+import { IrcChatIcon } from '@/components/icons/irc-chat-icon';
+import { SlackIcon } from '@/components/icons/slack-icon';
 
 const actions = [
   {
-    title: 'Request time off',
-    href: '#',
-    icon: ClockIcon,
-    iconForeground: 'text-teal-700',
-    iconBackground: 'bg-teal-50',
-  },
-  {
-    title: 'Benefits',
-    href: '#',
-    icon: BadgeCheckIcon,
+    title: 'GitHub',
+    description: 'Open bug reports and feature requests on the compiler',
+    href: '/',
+    icon: GitHubIcon,
     iconForeground: 'text-purple-700',
     iconBackground: 'bg-purple-50',
   },
   {
-    title: 'Schedule a one-on-one',
-    href: '#',
-    icon: UsersIcon,
+    title: 'Twitter',
+    description: 'Catch up with some of the latest announcement and events from the community.',
+    href: '/',
+    icon: TwitterIcon,
+    iconForeground: 'text-teal-700',
+    iconBackground: 'bg-teal-50',
+  },
+  {
+    title: 'Discord',
+    description: 'Chat with other members of the community on Discord.',
+    href: '/',
+    icon: DiscordIcon,
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
   },
-  { title: 'Payroll', href: '#', icon: CashIcon, iconForeground: 'text-yellow-700', iconBackground: 'bg-yellow-50' },
   {
-    title: 'Submit an expense',
-    href: '#',
-    icon: ReceiptRefundIcon,
+    title: 'Stack Overflow',
+    description: 'Ask and help answer Erlang questions.',
+    href: '/',
+    icon: StackOverflowIcon,
+    iconForeground: 'text-yellow-700',
+    iconBackground: 'bg-yellow-50',
+  },
+  {
+    title: 'IRC Chat',
+    description: 'Chat with other members of the community on IRC.',
+    href: '/',
+    icon: IrcChatIcon,
     iconForeground: 'text-rose-700',
     iconBackground: 'bg-rose-50',
   },
   {
-    title: 'Training',
-    href: '#',
-    icon: AcademicCapIcon,
+    title: 'Slack',
+    href: '/',
+    icon: SlackIcon,
     iconForeground: 'text-indigo-700',
     iconBackground: 'bg-indigo-50',
   },
@@ -55,8 +64,8 @@ export function CommunityLinks() {
           Join Our Communities!
         </h2>
         <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-          fugiat veniam occaecat fugiat aliqua.
+          Ask and answer questions, share and discuss Erlang-related articles and posts, let people know about your
+          projects and find collaborators.
         </p>
       </div>
       <div className="rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
@@ -90,10 +99,7 @@ export function CommunityLinks() {
                   {action.title}
                 </a>
               </h3>
-              <p className="mt-2 text-sm text-gray-500">
-                Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis
-                et quo et molestiae.
-              </p>
+              <p className="mt-2 text-sm text-gray-500">{action.description}</p>
             </div>
             <span
               className="pointer-events-none absolute top-6 right-6 text-gray-300 group-hover:text-gray-400"

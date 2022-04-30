@@ -8,8 +8,9 @@ export function Hero() {
             <span className="block text-indigo-600 xl:inline">Community</span>
           </h1>
           <p className="mt-3 max-w-md mx-auto text-lg text-white sm:text-xl md:mt-5 md:max-w-3xl">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua.
+            Looking to interact with people who are also interested in Erlang? Find out about upcoming events, read up
+            on blogs from the community, sign up for Erlang mailing lists, and discover even more places to engage with
+            people from the community!
           </p>
           <div className="mt-10 flex justify-center">
             <div className="rounded-md shadow">

@@ -1,6 +1,6 @@
-type GithubIconProps = { className?: string } & Omit<JSX.IntrinsicElements['svg'], 'viewBox' | 'fill'>;
+type GitHubIconProps = { className?: string } & Omit<JSX.IntrinsicElements['svg'], 'viewBox' | 'fill'>;
 
-export function GithubIcon(props: GithubIconProps) {
+export function GitHubIcon(props: GitHubIconProps) {
   return (
     <svg {...props} fill="currentColor" viewBox="0 0 24 24">
       <title>GitHub Icon</title>

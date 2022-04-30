@@ -56,7 +56,7 @@ function Menu(props: { onOpenDrawer: () => void }) {
               </button>
             </div>
           </div>
-          <div className="hidden space-x-8 md:flex md:ml-10">
+          <nav className="hidden space-x-8 md:flex md:ml-10">
             {navigation.map((item) => (
               <RouterLink
                 key={item.name}
@@ -66,7 +66,7 @@ function Menu(props: { onOpenDrawer: () => void }) {
                 {item.name}
               </RouterLink>
             ))}
-          </div>
+          </nav>
         </div>
         <div className="hidden md:flex md:items-center md:space-x-6">
           <RouterLink
@@ -88,13 +88,31 @@ export function Header() {
       <Menu onOpenDrawer={controller.onOpenDrawer} />
 
       <Drawer anchor="right" open={controller.sidebarOpen} onDrawerClose={controller.onDrawerClose} title="Main Menu">
-        <div className="flex-1 flex-shrink-0 w-96 flex flex-col bg-white px-4 py-6">
+        <div className="flex-1 flex-shrink-0 w-96 flex flex-col gap-6 bg-white px-4 py-6">
           <div className="flex justify-between items-center">
             <ErlangLogoHomeLink />
             <button className="hover:bg-blue-100 p-2 rounded-full" onClick={controller.onDrawerClose}>
               <XIcon className="w-8 h-8 flex" />
             </button>
           </div>
+          <nav className="flex flex-col gap-4">
+            {navigation.map((item) => (
+              <RouterLink
+                key={item.name}
+                href={item.href}
+                className="py-2 px-4 rounded hover:bg-gray-100 text-base text-gray-500 hover:text-gray-900"
+              >
+                {item.name}
+              </RouterLink>
+            ))}
+          </nav>
+
+          <RouterLink
+            href="/get-started"
+            className="text-center items-center px-6 py-4 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
+          >
+            Get Started
+          </RouterLink>
         </div>
       </Drawer>
     </div>

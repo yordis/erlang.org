@@ -1,6 +1,6 @@
-import { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from 'react';
 
-export default function Button(props: PropsWithChildren<{}>) {
+export function Button(props: PropsWithChildren<{}>) {
   return (
     <a
       target="_blank"

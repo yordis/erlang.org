@@ -1,10 +1,10 @@
-import * as React from 'react';
 import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 export function useAnalyticsPageTrack() {
   const router = useRouter();
 
-  React.useEffect(() => {
+  useEffect(() => {
     function onRouteChangeComplete(url: string) {
       console.log('New Route', url);
     }

@@ -1,9 +1,9 @@
 export function Hero() {
   return (
-    <main className="lg:relative">
+    <div className="lg:relative bg-gray-900">
       <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48">
         <div className="px-4 sm:px-8 xl:pr-16">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+          <h1 className="text-white text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
             <span className="block xl:inline">The Erlang</span>{' '}
             <span className="block text-indigo-600 xl:inline">Community</span>
           </h1>
@@ -23,6 +23,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   )
 }

@@ -1,5 +1,5 @@
 import { PageTitle } from '@/components/page-title';
-import { Hero } from '@/components/hero';
+import { Hero } from '@/routes/components/hero';
 import { Footer } from '@/components/footer';
 import { TrustedBy } from '@/routes/components/trusted-by';
 import { Features } from '@/routes/components/features';

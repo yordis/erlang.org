@@ -50,9 +50,7 @@ export function Footer() {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-12">
           <div className="flex flex-col gap-8">
             <ErlangOfficialLogo className="h-20 self-start" />
-            <p className="text-gray-500 text-base">
-              Making the world a better place through constructing elegant hierarchies.
-            </p>
+            <p className="text-gray-500 text-base">Practical functional programming for a parallel world</p>
             <div className="flex gap-6">
               <SocialMediaLink name="Twitter" href="/" icon={TwitterIcon} />
               <SocialMediaLink name="GitHub" href="/" icon={GithubIcon} />

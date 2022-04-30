@@ -1,18 +1,32 @@
 import type { PropsWithChildren } from 'react';
 import { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
+import clsx from 'clsx';
 
 type DrawerProps = PropsWithChildren<{
   title?: string;
   description?: string;
   open: boolean;
-  onClose(): void;
-}>
+  onDrawerClose(): void;
+  anchor?: 'left' | 'right';
+  position?: 'fixed' | 'absolute';
+}>;
 
 export function Drawer(props: DrawerProps) {
+  const { anchor = 'left', position = 'fixed' } = props;
+
   return (
-    <Transition show={props.open} as={Fragment}>
-      <Dialog unmount={false} onClose={props.onClose} className="fixed z-30 inset-0 flex">
+    <Transition.Root show={props.open} as={Fragment}>
+      <Dialog
+        unmount={false}
+        onClose={props.onDrawerClose}
+        className={clsx('fixed z-30 flex', {
+          fixed: position === 'fixed',
+          absolute: position === 'absolute',
+          'inset-0': anchor === 'left',
+          'inset-y-0 right-0': anchor === 'right',
+        })}
+      >
         <div className="flex flex-1">
           <Transition.Child
             as={Fragment}
@@ -30,11 +44,21 @@ export function Drawer(props: DrawerProps) {
           <Transition.Child
             as={Fragment}
             enter="transition ease-in-out duration-300 transform"
-            enterFrom="-translate-x-full"
-            enterTo="translate-x-0"
+            enterFrom={clsx({
+              '-translate-x-full': anchor === 'left',
+              'translate-x-full': anchor === 'right',
+            })}
+            enterTo={clsx({
+              'translate-x-0': anchor === 'left',
+            })}
             leave="transition ease-in-out duration-300 transform"
-            leaveFrom="translate-x-0"
-            leaveTo="-translate-x-full"
+            leaveFrom={clsx({
+              'translate-x-0': anchor === 'left',
+            })}
+            leaveTo={clsx({
+              '-translate-x-full': anchor === 'left',
+              'translate-x-full': anchor === 'right',
+            })}
           >
             <div className="flex flex-col z-50 overflow-hidden">
               {props.title && <Dialog.Title className="sr-only">{props.title}</Dialog.Title>}
@@ -44,6 +68,6 @@ export function Drawer(props: DrawerProps) {
           </Transition.Child>
         </div>
       </Dialog>
-    </Transition>
+    </Transition.Root>
   );
 }

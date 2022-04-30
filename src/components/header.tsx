@@ -14,8 +14,8 @@ const navigation = [
 export function Header() {
   return (
     <div className="relative overflow-hidden">
-      <Popover as="header" className="fixed">
-        <div className="bg-gray-900 pt-6">
+      <Popover as="header" className="relative">
+        <div className="bg-gray-900 py-6">
           <nav
             className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
             aria-label="Global"
@@ -23,7 +23,7 @@ export function Header() {
             <div className="flex items-center flex-1">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="/">
-                  <span className="sr-only">Workflow</span>
+                  <span className="sr-only">Erlang</span>
                   <ErlangOfficialLogo className="h-8 w-auto sm:h-10" />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
@@ -46,12 +46,12 @@ export function Header() {
               </div>
             </div>
             <div className="hidden md:flex md:items-center md:space-x-6">
-              <a
+              <RouterLink
                 href="/get-started"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
               >
                 Get Started
-              </a>
+              </RouterLink>
             </div>
           </nav>
         </div>

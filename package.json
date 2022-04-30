@@ -6,7 +6,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write '**/*'"
+    "format": "prettier --ignore-unknown --no-error-on-unmatched-pattern --write '**/*'"
   },
   "dependencies": {
     "@headlessui/react": "1.6.0",

@@ -1,10 +1,19 @@
-import { Button } from '@/components/button';
+import { PageTitle } from '@/components/page-title';
+import { Hero } from '@/routes/components/hero';
+import { Footer } from '@/components/footer';
+import { TrustedBy } from '@/routes/components/trusted-by';
+import { Features } from '@/routes/components/features';
+import { Testimonial } from '@/routes/components/testimonial';
 
-export function IndexRoute() {
+export function Index() {
   return (
-    <div className="flex flex-col items-center justify-center mt-10 w-screen h-screen">
-      <h1 className="font-normal text-5xl mb-10">Hello, World!</h1>
-      <Button>Click me 🚀!</Button>
-    </div>
+    <>
+      <PageTitle title="Home" />
+      <Hero />
+      <TrustedBy />
+      <Testimonial />
+      <Features />
+      <Footer />
+    </>
   );
 }

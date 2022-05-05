@@ -13,3 +13,5 @@ LICENSE
 .npmrc
 .next
 out
+.yarn
+.idea

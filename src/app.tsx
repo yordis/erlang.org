@@ -1,7 +1,7 @@
 import type { AppProps as NextAppProps, NextWebVitalsMetric } from 'next/app';
 import type { NextPageWithLayout } from '@/types';
 
-import { Fragment, useEffect } from 'react';
+import { useEffect } from 'react';
 import Head from 'next/head';
 import { useAnalyticsPageTrack } from '@/hooks';
 import { getNoopLayout } from '@/components/layout';
@@ -28,12 +28,12 @@ export function App(props: AppProps) {
   useApp();
 
   return (
-    <Fragment>
+    <>
       <Head>
         <title>Website</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       {getLayout(<props.Component {...props.pageProps} />)}
-    </Fragment>
+    </>
   );
 }
